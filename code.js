@@ -40,3 +40,14 @@ function displayRecommendations() {
     const imageContainer = document.getElementById('imageContainer');
     imageContainer.appendChild(placeholderImg);
 }
+
+function addReservationButton() {
+    const reservationButton = document.createElement('button');
+    reservationButton.textContent = '예약 페이지로 이동하기';
+    reservationButton.addEventListener('click', function() {
+        window.location.href = 'reservation.html'; // 이동할 페이지의 경로를 설정합니다.
+    });
+    
+    const container = document.getElementById('container');
+    container.appendChild(reservationButton);
+}
