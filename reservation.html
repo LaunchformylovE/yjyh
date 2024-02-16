@@ -1,0 +1,41 @@
+<!-- reservation.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Reservation</h1>
+        <div id="reservationForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name"><br>
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" placeholder="010-XXXX-XXXX"><br>
+            <label for="date">Reservation Date:</label>
+            <input type="date" id="date"><br>
+            <label for="time">Reservation Time:</label>
+            <input type="time" id="time" min="10:00" max="19:00"><br>
+            <button onclick="makeReservation()">Make Reservation</button>
+        </div>
+        <table id="reservationTable">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Name</th>
+                    <th>Contact</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Reservation data will be added here -->
+            </tbody>
+        </table>
+        <div id="reservationInfo"></div>
+    </div>
+    <script src="code2.js"></script>
+</body>
+</html>
